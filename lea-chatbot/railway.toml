@@ -1,0 +1,17 @@
+# railway.toml
+
+[build]
+  command = "npm install && npm run build"
+  publish = "client"
+
+[deploy]
+  provider = "node"
+  version = "16"
+
+[env]
+  NODE_ENV = "production"
+  PORT = "3000"
+  GEMINI_API_KEY = ""  # Add your Gemini API key here
+
+[services]
+  api = { type = "node", port = "3000" }

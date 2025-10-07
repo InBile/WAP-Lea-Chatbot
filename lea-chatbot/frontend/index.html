@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>LEA - Tu Asistente de Aprendizaje</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Configuración: reemplaza el valor BACKEND_URL por la URL de tu backend en Railway tras el deploy -->
+  <script>
+    window.LEA_CONFIG = {
+      BACKEND_URL: 'http://localhost:3001' // cambiar por https://tu-backend-xxxxx.railway.app en producción
+    };
+  </script>
+</head>
+<body>
+  <div class="container">
+    <div class="header"><h1>LEA - Tu asistente</h1></div>
+    <div class="chat-box" id="chat-box"></div>
+    <div class="input-area">
+      <input id="input" placeholder="Escribe tu pregunta..." autocomplete="off" />
+      <button id="send">Enviar</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
